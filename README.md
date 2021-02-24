@@ -34,3 +34,7 @@ $ yarn build
 
 ![week](01.jpg "Week")
 ![week](02.jpg "Week")
+
+更新界面如下：  
+![week](03.jpg "Week")
+![week](04.jpg "Week")
