@@ -1,0 +1,25 @@
+{
+  "name": "miniprogram-schedule",
+  "private": true,
+  "version": "1.0.0",
+  "description": "miniprogram-schedule",
+  "main": "index.js",
+  "keywords": [],
+  "author": "tanghuan <tanghuanyou@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "remax build -t wechat -w",
+    "build": "cross-env NODE_ENV=production remax build -t wechat"
+  },
+  "dependencies": {
+    "clsx": "^1.1.1",
+    "date-fns": "^2.17.0",
+    "react": "^16.12.0",
+    "remax": "^2.0.7",
+    "remax-iconfont-component": "^1.0.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "remax-iconfont-plugin": "^1.0.0"
+  }
+}
