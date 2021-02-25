@@ -8,6 +8,7 @@ import CalendarHeader from "@/components/CalendarHeader";
 import CalendarContent from "@/components/CalendarContent";
 
 import Calendar from "@/components/Calendar";
+import Schedule from "@/components/Schedule";
 import styles from "./index.css";
 // https://medium.com/@moodydev/create-a-custom-calendar-in-react-3df1bfd0b728
 // https://developers.weixin.qq.com/community/develop/doc/000a2496f38b8065f9e8974f451c00
@@ -62,8 +63,11 @@ export default () => {
           />
         </View>
       </View> */}
-      <View className={styles.calendar}>
+      {/* <View className={styles.calendar}>
         <Calendar />
+      </View> */}
+      <View className={styles.calendar}>
+        <Schedule />
       </View>
     </View>
   );
