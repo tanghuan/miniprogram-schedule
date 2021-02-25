@@ -86,9 +86,33 @@ const Calendar = () => {
         const now = new Date();
         const prevMonth = addMonths(now, -1);
         const nextMonth = addMonths(now, 1);
-        setMonths([now, nextMonth, prevMonth]);
-        if (currentDot) {
-          setCurrentDot(0);
+        if (!isSameDay(months[currentDot], now)) {
+          if (currentDot === 0 && months[currentDot] > now) {
+            setMonths([nextMonth, prevMonth, now]);
+            setCurrentDot(2);
+          }
+          if (currentDot === 0 && months[currentDot] < now) {
+            setMonths([prevMonth, now, nextMonth]);
+            setCurrentDot(1);
+          }
+
+          if (currentDot === 1 && months[currentDot] > now) {
+            setMonths([now, nextMonth, prevMonth]);
+            setCurrentDot(0);
+          }
+          if (currentDot === 1 && months[currentDot] < now) {
+            setMonths([nextMonth, prevMonth, now]);
+            setCurrentDot(2);
+          }
+
+          if (currentDot === 2 && months[currentDot] > now) {
+            setMonths([prevMonth, now, nextMonth]);
+            setCurrentDot(1);
+          }
+          if (currentDot === 2 && months[currentDot] < now) {
+            setMonths([now, nextMonth, prevMonth]);
+            setCurrentDot(0);
+          }
         }
       }
     }
