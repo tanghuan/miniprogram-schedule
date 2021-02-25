@@ -11,10 +11,14 @@ import isSameDay from "date-fns/isSameDay";
 
 import styles from "./index.css";
 
+// 参考资料
+// https://medium.com/@moodydev/create-a-custom-calendar-in-react-3df1bfd0b728
+// https://developers.weixin.qq.com/community/develop/doc/000a2496f38b8065f9e8974f451c00
+// * https://blog.csdn.net/sinat_33184880/article/details/96145086
+
 const Schedule = () => {
   const nowDate = new Date();
   const [currentDot, setCurrentDot] = useState(0);
-  const [lastTapDate, setLastTapDate] = useState();
   const [weeks, setWeeks] = useState(() => {
     const prevMonth = addWeeks(nowDate, -1);
     const nextMonth = addWeeks(nowDate, 1);

@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { View, Swiper, SwiperItem } from "remax/wechat";
 
 import { zhCN } from "date-fns/locale";
