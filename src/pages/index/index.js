@@ -6,6 +6,8 @@ import addMonths from "date-fns/addMonths";
 
 import CalendarHeader from "@/components/CalendarHeader";
 import CalendarContent from "@/components/CalendarContent";
+
+import Calendar from "@/components/Calendar";
 import styles from "./index.css";
 // https://medium.com/@moodydev/create-a-custom-calendar-in-react-3df1bfd0b728
 // https://developers.weixin.qq.com/community/develop/doc/000a2496f38b8065f9e8974f451c00
@@ -44,14 +46,14 @@ export default () => {
 
   return (
     <View className={styles.body}>
-      <View className={styles.bars}>
+      {/* <View className={styles.bars}>
         <View onClick={onPrev}>Prev</View>
         <View onClick={() => setCurrentDate(new Date())}>Today</View>
         <View onClick={onNext}>Next</View>
         <View onClick={onSwitch}>Switch</View>
-      </View>
+      </View> */}
 
-      <View className={styles.calendar}>
+      {/* <View className={styles.calendar}>
         <CalendarHeader currentView={currentView} currentDate={currentDate} />
         <View className={styles.calendarContent}>
           <CalendarContent
@@ -59,6 +61,9 @@ export default () => {
             currentDate={currentDate}
           />
         </View>
+      </View> */}
+      <View className={styles.calendar}>
+        <Calendar />
       </View>
     </View>
   );
