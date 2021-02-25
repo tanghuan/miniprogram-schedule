@@ -1,12 +1,18 @@
 .calendar {
+  margin: 0;
+  padding: 0;
   height: 100%;
 }
 
 .header {
+  margin: 0;
+  padding: 0;
   position: relative;
 }
 
 .body {
+  margin: 0;
+  padding: 0;
   position: relative;
 }
 
@@ -58,4 +64,14 @@
   width: 100%;
   top: 0;
   height: 100%;
+  color: rgba(238, 238, 238, 0.6);
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+
+.disabled {
+  color: #ccc;
 }
