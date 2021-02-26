@@ -145,7 +145,6 @@ const Schedule = () => {
       const day = addDays(weekStart, i);
       const cells = [];
       const sameDay = isSameDay(nowDate, day);
-      console.log(nowDate, day, sameDay);
       const cellStyles = clsx(styles.cell, sameDay && styles.today);
       for (let j = 8; j <= 23; j++) {
         cells.push(
